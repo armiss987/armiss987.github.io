@@ -11,7 +11,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script type="text/javascript" src="js/modal.js" defer></script>
 	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="common.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript" src="js/anchor.js"></script>
 </head>
@@ -320,7 +319,7 @@
 		<div class="modal modal-hide">
 			<button class="modal__close button" type="button">Закрыть</button>
 			<h3 class="modal__title">Закажите текст,отправив форму!</h3>
-			<form class="modal__form" id="form" method="post">
+			<form class="modal__form" id="form" action="mail.php" method="POST">
 				<label for="user-name">
 					<p class="modal__text">Введите имя:</p>
 				</label>
@@ -333,7 +332,7 @@
 					<p class="modal__text">Опишите ваш заказ:</p>
 				</label>
 				<textarea class="modal__input modal__mes" name="text" maxlength="500" placeholder="Ваше сообщение" id="user-mes" required></textarea>
-				<button class="modal__button button button--red">Отправить!</button>
+				<button class="modal__button button button--red" type="submit">Отправить!</button>
 			</form>
 		</div>
 	</section>
