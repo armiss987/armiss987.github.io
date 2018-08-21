@@ -1,0 +1,131 @@
+@import 'blocks/start-block.css';
+@import 'blocks/about-me.css';
+@import 'blocks/portfolio.css';
+@import 'blocks/price.css';
+@import 'blocks/article.css';
+@import 'blocks/contacts.css';
+@import 'blocks/footer.css';
+@import 'blocks/more.css';
+@import 'blocks/modal.css';
+
+@font-face {
+    font-family:'Bebas Neue';
+    src: url('../fonts/BebasNeue-Bold.ttf');
+}
+
+.button {
+  border: none;
+  font-family: 'open sans', sans-serif;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: 'open sans', sans-serif;
+}
+
+.button--empty {
+  width: 250px;
+  height: 50px;
+  outline: 2px solid #B2091A;
+  color: #B2091A;
+  background-color: transparent;
+  font-size: 18px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button--empty:hover {
+  background-color: #CD2435;
+  color: #Ffffff;
+}
+
+.button--empty:focus {
+  background-color: #CD2435;
+  color: #Ffffff;
+}
+
+.button--red {
+  width: 250px;
+  height: 50px;
+  background-color: #CD2435;
+  color: #Ffffff;
+  font-size: 18px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button--red:hover {
+  background-color: #B2091A;
+  color: #fff
+}
+
+.button--red:focus {
+  background-color: #861111;
+  outline: none;
+}
+
+h1, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+p,a {
+  font-family: 'open sans', sans-serif;
+}
+
+.item-name {
+  color: #2A2E35;
+  font-size: 36px;
+}
+
+.about-me__text {
+  font-size: 20px;
+}
+
+.section-title {
+  font-size: 50px;
+  color: #2A2E35;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.section-title::after {
+  content: " ";
+  position: absolute;
+  width: 135px;
+  height: 5px;
+  background-color: #CD2435;
+  bottom: -25px;
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .start-block__wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .button--empty {
+    width: 100% !important;
+  }
+  
+  .button--red {
+    width: 100% !important;
+  }
+}
